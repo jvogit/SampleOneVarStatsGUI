@@ -24,9 +24,10 @@ class Application(ttk.Frame):
         self.center_frame()
         self.updateThread = LiveUpdateThread(self)
         self.updateThread.start()
+        self.data_set_entry.insert(END, "1,2,3")
     
     def create_widgets(self):
-        self.data_set_title = Label(self, text="Enter sample here")
+        self.data_set_title = Label(self, text="Enter sample here Delimitter comma (,)")
         self.data_set_entry = Text(self)
         self.meanText = Label(self, text='mean: ')
         self.meanLabel = Label(self, textvariable = self.meanVar, relief='groove')
