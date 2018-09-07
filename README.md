@@ -1,7 +1,12 @@
 Hi!
 
 It updates automatically
-Gives: 
+Gives:
+ 
 mean
+
 median
+
 sample standard deviation
+
+Run stats_gui.py
