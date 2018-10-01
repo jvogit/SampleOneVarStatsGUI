@@ -101,7 +101,7 @@ class LiveUpdateThread(threading.Thread):
                 try:
                     #Attempts to parse the string and add it
                     #the int function will throw a ValueError if it is not a number which we check for in this try catch thing
-                    PARSED_NUMBERS.append(int(unparsed_number))
+                    PARSED_NUMBERS.append(float(unparsed_number))
                 except ValueError:
                     #This means it is not a number the int func threw an error
                     #continue means continue on the loop
