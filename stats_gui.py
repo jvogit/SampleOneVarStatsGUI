@@ -31,9 +31,9 @@ class Application(ttk.Frame):
         #widgets individual elements
         self.data_set_title = Label(self, text="Enter sample here Delimitter comma (,)")
         self.data_set_entry = Text(self)
-        self.meanText = Label(self, text='mean: ')
+        self.meanText = Label(self, text='Mean: ')
         self.meanLabel = Label(self, textvariable = self.meanVar, relief='groove') #I use textvariable See create_variables this is so i can dynmically update them later!!
-        self.medianText = Label(self, text='median: ')
+        self.medianText = Label(self, text='Median: ')
         self.medianLabel = Label(self, textvariable = self.medianVar, relief='groove')
         self.standardDevText = Label(self, text='Sx')
         self.standardLabel = Label(self, textvariable = self.standardDevVar, relief='groove')
